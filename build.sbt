@@ -34,6 +34,8 @@ lazy val `hello-testing` =
     .settings(commonSettings)
     .settings(
       libraryDependencies ++= Seq(
+        library.scalatest,
+        library.scalamock,
         library.munit           % Test,
         library.munitScalaCheck % Test,
       ),
@@ -61,6 +63,8 @@ lazy val library =
     object Version {
       val munit = "0.7.25"
     }
+    val scalamock       = "org.scalamock" %% "scalamock"        % "5.1.0" % Test
+    val scalatest       = "org.scalatest" %% "scalatest"        % "3.1.0" % Test
     val munit           = "org.scalameta" %% "munit"            % Version.munit
     val munitScalaCheck = "org.scalameta" %% "munit-scalacheck" % Version.munit
   }
