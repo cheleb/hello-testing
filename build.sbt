@@ -63,7 +63,7 @@ lazy val library =
     object Version {
       val munit = "0.7.25"
     }
-    val scalamock       = "org.scalamock" %% "scalamock"        % "7.4.0" % Test
+    val scalamock       = "org.scalamock" %% "scalamock"        % "7.4.1" % Test
     val scalatest       = "org.scalatest" %% "scalatest"        % "3.2.19" % Test
     val munit           = "org.scalameta" %% "munit"            % Version.munit
     val munitScalaCheck = "org.scalameta" %% "munit-scalacheck" % Version.munit
